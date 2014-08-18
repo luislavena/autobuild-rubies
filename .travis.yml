@@ -1,0 +1,11 @@
+language: c
+
+os:
+  - osx
+
+install:
+  - ./scripts/install.$TRAVIS_OS_NAME.deps.sh
+
+# TODO
+script:
+  - true
