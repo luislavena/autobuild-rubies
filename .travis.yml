@@ -4,7 +4,7 @@ os:
   - osx
 
 install:
-  - ./scripts/install.$TRAVIS_OS_NAME.deps.sh
+  - if [ "${TRAVIS_OS_NAME}" = "osx" ]; then ./scripts/install.osx.deps.sh; fi
 
 # TODO
 script:
